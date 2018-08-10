@@ -6,7 +6,7 @@
     height: 100%;
     color: white;
     background-color: black;
-        /*#193153;*/
+    /*#193153;*/
 }
 
 html {
@@ -60,7 +60,7 @@ a {
     margin-bottom: 0;
     text-transform: uppercase;
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-    background-color: #191e28
+    background-color: #191e28;
 }
 
     #mainNav .navbar-toggler {
@@ -128,10 +128,12 @@ a {
     background: url('../Pictures/VarunGreyScale.png')no-repeat center right;
     background-size: 412px 500px;
 }
-.container
-{
-    max-height:600px
+
+.container {
+    max-height: 786px;
+    max-width: 1366px
 }
+
 .header-content h1 {
     font-size: 40px;
     font-weight: 700;
@@ -350,4 +352,16 @@ img::-moz-selection {
 .img__wrap:hover .img__description {
     visibility: visible;
     opacity: 1;
+}
+
+.span4 img {
+    margin-right: 10px;
+}
+
+.span4 .img-left {
+    float: left;
+}
+
+.span4 .img-right {
+    float: right;
 }

@@ -123,7 +123,8 @@
                 margin: 0;
                 padding: 0 1em;
                 line-height: 2em;
-                font-weight:100;
+                font-weight: 100;
+                font-size: 16px;
                 position: relative;
             }
 
@@ -178,61 +179,134 @@
             </div>
         </div>
     </nav>
-    <div class="col-md-4" style="margin-top:135px; color:white;">
-        <div class="panel panel-default">
-            <div class="panel-heading">Treeview List</div>
-            <div class="panel-body">
-                <!-- TREEVIEW CODE -->
-                <ul class="treeview">
-                    <li>
-                        <a href="#">Tree</a>
-                        <ul>
-                            <li><a href="#">Branch</a></li>
-                            <li>
-                                <a href="#">Branch</a>
+    <div class="row container">
+        <div class="col-sm-4" style="margin-top:135px; color:white;">
+            <div class="panel panel-default">
+                <div class="panel-heading">The MSCRM Book</div>
+                <div class="panel-body">
+                    <!-- TREEVIEW CODE -->
+                    <ul class="treeview">
+                        <li>
+                            <a href="#applicationStructure">1. The Dynamics CRM Application structure</a>
+                            <ul>
+                                <li>
+                                    <a href="#Sales">1.1 Sales</a>
+                                    <ul>
+                                        <li><a href="#SalesProcessinDynamicsCRM">1.1.1 Sales Process in Dynamics CRM</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <!-- TREEVIEW CODE -->
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-8" style="margin-top:135px;">
+            <div class="block">
+                <section id="applicationStructure">
+                    <h2 class="brand-heading">
+                        1. The Dynamics CRM Application structure
+                    </h2>
+
+                    <div class="row">
+                        <div class="span4" style="text-align:justify;">
+                            <img class="img-left" src="Pictures/CRMStructure.png" alt="CRMStructure" />
+                            <p>
+                                We all know CRM is for maintaining the Customer Relationship for a firm. To get a customer for the products or services offered by Organization, we need Sales. In order to increase the Sales, Marketing is essential and to address the after sales problems/assistance, we need Services.Microsoft Dynamics CRM offers these three important modules <strong>Sales, Marketing and Services</strong>.
+                            </p>
+                            <p>
+                                Let's talk about the Sales module and what it offers in Dynamics CRM.
+                                <br />
+                                When you click on the menu button, modules tab will be listed as shown in the below picture. Further click on the Sales tab. All the sub-modules relating to it will be listed. They can be categorized into shared entities and Sales Specific entities.
+                            </p>
+                        </div>
+                        <section id="Sales">
+                            <div style="text-align:justify;">
+                                <h3>1.1 Sales</h3>
+                                <img />
+                                <p>
+                                    Here we will talk about the Sales Specific entities.
+                                </p>
                                 <ul>
-                                    <li><a href="#">Stick</a></li>
-                                    <li><a href="#">Stick</a></li>
                                     <li>
-                                        <a href="#">Stick</a>
-                                        <ul>
-                                            <li><a href="#">Twig</a></li>
-                                            <li><a href="#">Twig</a></li>
-                                            <li><a href="#">Twig</a></li>
-                                            <li>
-                                                <a href="#">Twig</a>
-                                                <ul>
-                                                    <li><a href="#">Leaf</a></li>
-                                                    <li><a href="#">Leaf</a></li>
-                                                    <li><a href="#">Leaf</a></li>
-                                                    <li><a href="#">Leaf</a></li>
-                                                    <li><a href="#">Leaf</a></li>
-                                                    <li><a href="#">Leaf</a></li>
-                                                    <li><a href="#">Leaf</a></li>
-                                                    <li><a href="#">Leaf</a></li>
-                                                    <li><a href="#">Leaf</a></li>
-                                                </ul>
-                                            </li>
-                                            <li><a href="#">Twig</a></li>
-                                            <li><a href="#">Twig</a></li>
-                                        </ul>
+                                        Leads
                                     </li>
-                                    <li><a href="#">Stick</a></li>
+                                    <li>
+                                        Opportunities
+                                    </li>
+                                    <li>Competitors </li>
                                 </ul>
-                            </li>
-                            <li><a href="#">Branch</a></li>
-                            <li><a href="#">Branch</a></li>
-                        </ul>
-                    </li>
-                </ul>
-                <!-- TREEVIEW CODE -->
+                                <p>And some of the Collateral entities that are involved in sales are</p>
+                                <ul>
+                                    <li>
+                                        Quotes
+                                    </li>
+                                    <li>
+                                        Orders
+                                    </li>
+                                    <li>
+                                        Invoices
+                                    </li>
+                                    <li>
+                                        Products
+                                    </li>
+                                    <li> Sales Literature.</li>
+                                </ul>
+                                <p>Also, there are another set of entities that are working with sales, which helps in managing the sales or Goals and Goal Metrics.</p>
+                            </div>
+                        </section>
+                        <section id="SalesProcessinDynamicsCRM">
+                            <div style="text-align:justify;">
+                                <h3>1.1.1 Sales Process in Dynamics CRM</h3>
+                                <p>
+                                    To Drive more sales interactions, there is a pre-defined process that needs to be followed. It takes you through multiple stages, right from creating a lead to closing the sale. You will be able to see the complete history that can be used a reference, if you plan to work with the same customer again in future, or if the customer needs support.
+                                </p>
+                                <p>
+                                    Sales process begins with a Lead – a person who is interested in the products or services offered by your organization. Leads can be automatically generated by Microsoft Dynamics Marketing, or they can come from other sources such as website opt-in pages, email queries, or business cards you gather at trade shows.
+                                </p>
+                                <table class="table table-striped table-dark">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">#</th>
+                                            <th scope="col">Sales Step</th>
+                                            <th scope="col">Description</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">1</th>
+                                            <td>Qualify</td>
+                                            <td><p>Hurrah!! We got a new Lead in the system. As soon as we get the Lead, we will contact him and send information about our products and services. We further nurture the Lead. Also, we will assess the usage and financial abilities of the Lead to purchase our services/ products. Once we are sure, we will convert the Lead to Opportunity <strong>(Lead is Qualified)</strong></p></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">2</th>
+                                            <td>Develop</td>
+                                            <td><p>Now we are in the Opportunity. Here we will identify the Stakeholders who will be responsible to buy our products, Competitors who will be having the similar products and who contacted our Opportunity & Sales Team Members who will be working closely with the Customer to propose the best solution.</p></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">3</th>
+                                            <td>Propose</td>
+                                            <td><p>After understanding the client requirement, a Quote will be created based on the selected products and services. We will present the Quote to the customer and wait for his confirmation. In this stage adjustments to the Quote can be made. Once proposal is accepted by the Customer, we will move it to Invoice and Order.</p></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">4</th>
+                                            <td>Close</td>
+                                            <td><p>Once the Invoice and Order is completed, we will close the Opportunity as <strong>WON</strong>, but in any of the later stages if the Qualified Customer rejects the proposals, we will close the Opportunity as <strong>Lost</strong>.</p></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </section>
+                    </div>
+                </section>
             </div>
         </div>
     </div>
-    <footer>
+    <!--<footer>
         <div class="container text-center">
             <p>Copyright &copy; VarunReddyParam 2018</p>
         </div>
-    </footer>
+    </footer>-->
 </body>
 </html>
